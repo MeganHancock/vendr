@@ -11,6 +11,7 @@ export class MoneyController {
 
     constructor() {
         console.log('money controller loaded', AppState.money);
+        AppState.on('money', _drawMoney)
     }
 
     addMoney() {

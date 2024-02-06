@@ -1,5 +1,7 @@
 import { AppState } from "../AppState.js"
+import { Snack } from "../models/SnacksModel.js"
 import { setHTML } from "../utils/Writer.js"
+import { snacksService } from "../services/SnacksService.js"
 
 function _drawSnacks() {
     const snacks = AppState.snacks
@@ -19,6 +21,7 @@ export class SnacksController {
 
     buySnack(snackName) {
         console.log('buying this snack:', snackName);
+        snacksService.buySnack(snackName)
 
     }
 
