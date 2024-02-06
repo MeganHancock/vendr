@@ -7,10 +7,12 @@ class ObservableAppState extends EventEmitter {
   money = 0
 
   snacks = [
-    new Snack({ name: 'apple', emoji: '🍎', price: '$.25' }),
-    new Snack({ name: 'sandwich', emoji: '🥪', price: '$2.25' }),
-    new Snack({ name: 'french fries', emoji: '🍟', price: '$1.25' }),
-    new Snack({ name: 'banana', emoji: '🍌', price: '$.25' }),
+    new Snack({ name: 'apple', emoji: '🍎', price: .25 }),
+    new Snack({ name: 'sandwich', emoji: '🥪', price: 2.25 }),
+    new Snack({ name: 'fries', emoji: '🍟', price: 1.25 }),
+    new Snack({ name: 'banana', emoji: '🍌', price: .25 }),
+    new Snack({ name: 'cookie', emoji: '🍪', price: 1.00 }),
+    new Snack({ name: 'pizza', emoji: '🍕', price: 2.00 }),
   ]
 
 
