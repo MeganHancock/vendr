@@ -15,4 +15,9 @@ export class Snack {
             <button type="button" id="buySnackButton" onclick="app.SnacksController.buySnack('${this.name}')">BUY</button>
         </div> `
     }
+
+    get mySnacksDisplayHTMLTemplate() {
+        return /*html*/`
+    <p class="display-2">${this.emoji}</p> `
+    }
 }

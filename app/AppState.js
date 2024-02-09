@@ -15,9 +15,9 @@ class ObservableAppState extends EventEmitter {
     new Snack({ name: 'pizza', emoji: '🍕', price: 2.00 }),
   ]
 
+  purchasedSnacks = []
 
-  /**@type {import('./models/Example.js').Example[]} */
-
+  // /**@type {snacks[]} */
 }
 
 export const AppState = createObservableProxy(new ObservableAppState())
